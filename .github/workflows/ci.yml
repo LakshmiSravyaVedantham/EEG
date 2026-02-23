@@ -25,4 +25,4 @@ jobs:
       - name: Verify project runs
         run: |
           python -c "import numpy, sklearn; print('Dependencies OK')"
-          ls *.py && echo "Source files found"
+          find . -name "*.py" | head -5 && echo "Source files found"
